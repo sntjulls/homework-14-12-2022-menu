@@ -1,61 +1,78 @@
-:root{
-    font-size: 24px;
+:root {
+  font-size: 24px;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-ul{
-    list-style: none;
-    padding-left: 0;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
-.main-navigate{
-    font-size: 1rem;
+.main-navigate {
+  font-size: 1rem;
 }
-.main-navigate__list{
-    margin-top: 0;
-    font-size: 0;
-    text-align: center;
+.main-navigate__list {
+  margin-top: 0;
+  font-size: 0;
+  text-align: center;
 }
-.main-navigate__item{
-    display: inline-block;
+.main-navigate__item {
+  display: inline-block;
 
-    position: relative;
-    background-color: teal;
-    color: azure;
+  position: relative;
+  background-color: teal;
+  color: azure;
 }
-.main-navigate__item:not(.main-navigate__item:last-child){
-    border-right: 1px solid rgb(0, 52, 52);
+.main-navigate__item:not(.main-navigate__item:last-child) {
+  border-right: 1px solid rgb(0, 52, 52);
 }
-.main-navigate__link{
-    display: inline-block;
-    padding: 0.5em 1em;
-    font-size: 1rem;
+.main-navigate__link {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1rem;
 }
-.main-navigate__list__sublist{
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    }  
-    .main-navigate__item:hover{
-        background-color: rgb(0, 52, 52)
-    }  
-.main-navigate__item:hover>.main-navigate__list__sublist{
-    display: block;
+.main-navigate__list__sublist {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.main-navigate__item__subitem{
-    display: block;
-    border-right: none;
-    }
+.main-navigate__item:hover {
+  background-color: rgb(0, 52, 52);
+}
+.main-navigate__item:hover > .main-navigate__list__sublist {
+  display: block;
+}
 
+.main-navigate__item__subitem {
+  display: block;
+  border-right: none;
+}
+
+.main-navigate__list__third-level:hover
+  > .main-navigate__list__sublist__third-level {
+  display: block;
+}
+
+.main-navigate__list__sublist__third-level {
+  display: block;
+  border-right: none;
+}
+
+.main-navigate__list__sublist__third-level {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 
 /* :root{
     font-size: 24px;
